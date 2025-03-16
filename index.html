@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DormLee - Hostel Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">DormLee</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#hostels">Hostels</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#" onclick="openLoginPopup()">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <img src="https://i.ibb.co/p6Pj5yLW/PXL-20240212-081929389.jpg" alt="Campus View">
+        <div class="hero-text">
+            <h1>Find Your Perfect Stay at Bennett University</h1>
+            <p>Book your hostel rooms conveniently with DormLee.</p>
+        </div>
+    </header>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <h2>Welcome to DormLee</h2>
+        <p>At DormLee, we provide a seamless hostel booking experience for students of Bennett University. Choose from comfortable accommodations, modern facilities, and secure hostels for both boys and girls.</p>
+    </section>
+
+    <!-- Hostel Selection Section -->
+    <section id="hostels" class="hostel-selection">
+        <h2>Choose Your Hostel</h2>
+        
+        <div class="hostel-container">
+            <!-- Boys Hostel Section -->
+            <div class="hostel-box boys-hostel">
+                <h3>Boys' Hostel</h3>
+                <select id="boysWing">
+                    <option>Select Wing</option>
+                    <option value="C1">C1</option>
+                    <option value="C2">C2</option>
+                    <option value="C3">C3</option>
+                    <option value="C4">C4</option>
+                    <option value="C5">C5</option>
+                    <option value="C6">C6</option>
+                    <option value="C7">C7</option>
+                    <option value="C8">C8</option>
+                    <option value="C9">C9</option>
+                    <option value="C10">C10</option>
+                    <option value="C11">C11</option>
+                    <option value="C12">C12</option>
+                </select>
+                <img src="https://i.ibb.co/jtgSYBf/AQMd-Htnu-0m9-FGri-OLsmp57-Hap-QIppep-RVp-HX6-Knyu-OQrsiuzdlz-Gv4-N7-E2-Sse7-D0-Rzx-UECQuo2ta-Va-MMG.jpg" alt="Boys Hostel">
+            </div>
+
+            <!-- Girls Hostel Section -->
+            <div class="hostel-box girls-hostel">
+                <h3>Girls' Hostel</h3>
+                <select id="girlsWing">
+                    <option>Select Wing</option>
+                    <option value="D1">D1</option>
+                    <option value="D2">D2</option>
+                    <option value="D3">D3</option>
+                    <option value="D4">D4</option>
+                    <option value="D5">D5</option>
+                    <option value="D6">D6</option>
+                </select>
+                <img src="https://i.ibb.co/jtgSYBf/AQMd-Htnu-0m9-FGri-OLsmp57-Hap-QIppep-RVp-HX6-Knyu-OQrsiuzdlz-Gv4-N7-E2-Sse7-D0-Rzx-UECQuo2ta-Va-MMG.jpg" alt="Girls Hostel">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:warden@bennett.edu.in">warden@bennett.edu.in</a></p>
+        <p>Phone: <a href="tel:+918829980012">+91 8829980012</a></p>
+    </section>
+
+    <!-- Login Popup -->
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeLoginPopup()">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 DormLee | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
